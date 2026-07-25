@@ -1,0 +1,21 @@
+# Visual Studio build files
+x64/
+x86/
+Debug/
+Release/
+build/
+
+# Compiled programs
+*.exe
+*.dll
+*.obj
+*.pdb
+*.lib
+
+# Visual Studio user files
+*.user
+.vs/
+
+# Temporary files
+*.tmp
+*.log

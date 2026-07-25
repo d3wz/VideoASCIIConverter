@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\VideoProcessor.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ProgressBar.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Settings.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ConsoleUI.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ConsoleUI.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ProgressBar.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Settings.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\VideoProcessor.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{91bdfa5e-bc80-4804-9155-3bc3c9c3d346}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{28b1fd59-4540-45e4-8e9d-62c6ee4374f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="assets">
+      <UniqueIdentifier>{e8c8a259-8940-4ea9-9959-930e131553c5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="assets\logo.txt">
+      <Filter>assets</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
