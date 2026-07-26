@@ -51,3 +51,32 @@ All notable changes to VideoASCIIConverter will be documented here.
 ### Changed
 - Refactored ConsoleUI to use the Console class
 - Moved Windows console functionality out of the UI layer
+
+---
+
+## v0.0.5
+
+### Added
+- Complete initial console interface layout.
+- Logo rendering inside the UI.
+- Settings menu rendering.
+- Footer/status bar rendering.
+- Dynamic menu item display with selected item indicator.
+- Improved UI border drawing with Unicode box characters.
+
+### Changed
+- Refined console UI structure:
+  - Console handles Windows API functionality.
+  - ConsoleUI handles interface rendering.
+  - Layout handles UI positioning constants.
+  - LogoLoader handles ASCII logo loading.
+- Adjusted layout dimensions for better logo and menu spacing.
+- Improved footer positioning to prevent overlap with the border.
+- Reduced ASCII logo size to better fit the interface.
+
+### Fixed
+- Fixed Unicode box characters displaying incorrectly.
+- Fixed ASCII logo encoding/rendering issues.
+- Fixed border alignment problems.
+- Fixed footer rendering inside the UI border.
+- Fixed layout elements overlapping due to incorrect coordinates.

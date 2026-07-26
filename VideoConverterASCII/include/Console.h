@@ -7,7 +7,9 @@
 class Console {
 	public:
 		Console();
-		void Initiliaze();
+		void Initialize();
+		void SetSize(short width, short height);
+		void SetTitle(const std::wstring& title);
 		void Clear();
 		void SetCursorPosition(short x, short y);
 		void Write(
@@ -15,8 +17,6 @@ class Console {
 			short y,
 			const std::wstring& text
 		);
-		void SetSize(short width, short height);
-		void SetTitle(const std::wstring& title);
 	
 	private:
 		HANDLE consoleHandle;

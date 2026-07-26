@@ -4,7 +4,10 @@ Console::Console() {
 	consoleHandle = GetStdHandle(STD_OUTPUT_HANDLE);
 }
 
-void Console::Initiliaze() {
+void Console::Initialize() {
+
+	consoleHandle = GetStdHandle(STD_OUTPUT_HANDLE);
+
 	SetConsoleOutputCP(CP_UTF8);
 	SetConsoleCP(CP_UTF8);
 
@@ -44,28 +47,30 @@ void Console::Write(
 }
 
 void Console::SetSize(short width, short height) {
-	COORD bufferSize;
-	bufferSize.X = width;
-	bufferSize.Y = height;
-	SetConsoleScreenBufferSize(
-		consoleHandle,
-		bufferSize
-	);
+    ShowWindow(
+        GetConsoleWindow(),
+        SW_RESTORE
+    );
 
-	SMALL_RECT windowSize;
-	windowSize.Left = 0;
-	windowSize.Top = 0;
-	windowSize.Right = width - 1;
-	windowSize.Bottom = height - 1;
+    COORD bufferSize;
 
-	SetConsoleWindowInfo(
-		consoleHandle,
-		TRUE,
-		&windowSize
-	);
+    bufferSize.X = width;
+    bufferSize.Y = height;
+
+
+    SetConsoleScreenBufferSize(
+        consoleHandle,
+        bufferSize
+    );
+
+    SMALL_RECT windowSize;
+
+    windowSize.Left = 0;
+    windowSize.Top = 0;
+    windowSize.Right = width - 1;
+    windowSize.Bottom = height - 1;
 }
 
-void Console::SetTitle(const std::wstring& title)
-{
+void Console::SetTitle(const std::wstring& title) {
 	SetConsoleTitleW(title.c_str());
 }
