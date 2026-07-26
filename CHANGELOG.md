@@ -26,9 +26,12 @@ All notable changes to VideoASCIIConverter will be documented here.
 
 ---
 
-## Upcoming (v0.0.3)
+## v0.0.3
 
-- Dedicated `Console` class
-- UTF-8 support
-- Proper buffer and window configuration
-- Unicode drawing
+### Added
+- Dedicated Console class
+- Unicode output using WriteConsoleW
+- Console size configuration
+
+### Changed
+- Moved Windows console handling away from UI code

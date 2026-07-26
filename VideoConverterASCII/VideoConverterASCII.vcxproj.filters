@@ -16,6 +16,9 @@
     <ClCompile Include="src\ConsoleUI.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\Console.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\ConsoleUI.h">
@@ -31,6 +34,9 @@
       <Filter>include</Filter>
     </ClInclude>
     <ClInclude Include="include\Layout.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Console.h">
       <Filter>include</Filter>
     </ClInclude>
   </ItemGroup>

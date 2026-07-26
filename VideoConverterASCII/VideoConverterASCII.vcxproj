@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Console.cpp" />
     <ClCompile Include="src\ConsoleUI.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\ProgressBar.cpp" />
@@ -26,6 +27,7 @@
     <ClCompile Include="src\VideoProcessor.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\Console.h" />
     <ClInclude Include="include\ConsoleUI.h" />
     <ClInclude Include="include\Layout.h" />
     <ClInclude Include="include\ProgressBar.h" />
