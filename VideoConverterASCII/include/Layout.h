@@ -1,12 +1,16 @@
 #pragma once
 
-struct Layout {
-	int logoX;
-	int logoY;
+class Layout {
+	public:
+		//Dimensions
+		static constexpr short Width = 120;
+		static constexpr short Height = 35;
 
-	int contentX;
-	int contentY;
+		//Logo Position
+		static constexpr short LogoX = 2;
+		static constexpr short LogoY = 5;
 
-	int width;
-	int height;
+		//Menu Position
+		static constexpr short MenuX = 45;
+		static constexpr short MenuY = 8;
 };

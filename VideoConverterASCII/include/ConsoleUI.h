@@ -1,21 +1,20 @@
 #pragma once
 #include <iostream>
 #include <windows.h>
+#include <vector>
+#include <string>
+#include "Console.h"
 #include "Layout.h"
 
 class ConsoleUI {
-	public:
-		void Initiliaze();
 	private:
-		HANDLE consoleHandle;
+		Console console;
 
 		Layout currentLayout;
 
-		void SetConsoleSize();
-		void SetupConsoleTitle();
-		void ClearScreen();
-		void SetCursorPosition(short x, short y);
-
 		void DrawBox(int x, int y, int width, int height);
 		void DrawLayout();
+		void DrawLogo(
+			const std::vector<std::wstring>& logo
+		);
 };

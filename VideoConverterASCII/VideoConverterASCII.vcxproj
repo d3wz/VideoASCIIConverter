@@ -21,6 +21,8 @@
   <ItemGroup>
     <ClCompile Include="src\Console.cpp" />
     <ClCompile Include="src\ConsoleUI.cpp" />
+    <ClCompile Include="src\Layout.cpp" />
+    <ClCompile Include="src\LogoLoader.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\ProgressBar.cpp" />
     <ClCompile Include="src\Settings.cpp" />
@@ -30,6 +32,7 @@
     <ClInclude Include="include\Console.h" />
     <ClInclude Include="include\ConsoleUI.h" />
     <ClInclude Include="include\Layout.h" />
+    <ClInclude Include="include\LogoLoader.h" />
     <ClInclude Include="include\ProgressBar.h" />
     <ClInclude Include="include\Settings.h" />
     <ClInclude Include="include\VideoProcessor.h" />

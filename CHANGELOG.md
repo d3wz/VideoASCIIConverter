@@ -35,3 +35,19 @@ All notable changes to VideoASCIIConverter will be documented here.
 
 ### Changed
 - Moved Windows console handling away from UI code
+
+---
+
+## v0.0.4
+
+### Added
+- Layout class
+- LogoLoader class
+- UTF-8 logo loading
+- Unicode rendering using WriteConsoleW
+- Console title management
+- Console size management
+
+### Changed
+- Refactored ConsoleUI to use the Console class
+- Moved Windows console functionality out of the UI layer

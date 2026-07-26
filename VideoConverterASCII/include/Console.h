@@ -16,6 +16,7 @@ class Console {
 			const std::wstring& text
 		);
 		void SetSize(short width, short height);
+		void SetTitle(const std::wstring& title);
 	
 	private:
 		HANDLE consoleHandle;

@@ -64,3 +64,8 @@ void Console::SetSize(short width, short height) {
 		&windowSize
 	);
 }
+
+void Console::SetTitle(const std::wstring& title)
+{
+	SetConsoleTitleW(title.c_str());
+}

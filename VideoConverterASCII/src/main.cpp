@@ -1,29 +1,34 @@
 ﻿#include "Console.h"
+#include "Layout.h"
+#include "LogoLoader.h"
 
 int main(int argc, char* argv[]) {
 
     Console console;
 
     console.Initiliaze();
-    console.SetSize(120, 35);
-
-    console.Write(
-        5,
-        5,
-        L"┌──────────────┐"
+    console.SetTitle(L"Video ASCII Converter");
+    console.SetSize(
+        Layout::Width,
+        Layout::Height
     );
+    LogoLoader logo;
 
-    console.Write(
-        5,
-        6,
-        L"│  Working!    │"
-    );
+    if (logo.Load("assets/logo.txt"))
+    {
+        short y = 2;
 
-    console.Write(
-        5,
-        7,
-        L"└──────────────┘"
-    );
+        for (const auto& line : logo.GetLines())
+        {
+            console.Write(
+                2,
+                y,
+                line
+            );
+
+            y++;
+        }
+    }
 
     system("pause");    
 
