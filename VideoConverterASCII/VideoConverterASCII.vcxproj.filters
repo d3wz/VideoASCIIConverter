@@ -30,6 +30,9 @@
     <ClInclude Include="include\VideoProcessor.h">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="include\Layout.h">
+      <Filter>include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="src">
